@@ -3,12 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <title>My Website - About</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/app.css') }}"
+    />
   </head>
   <body>
     <h1>Jordan Laylor</h1>
     <p>
-      Im Jordan and I'm going to be King of the pirates. But first I need a ship
-      and learn how to swim. I might also need to travel to another dimension.
+      I'm Jordan and I'm going to be King of the pirates. But first I need a
+      ship and also learn how to swim. I might also need to travel to another
+      dimension. I will try after I graduate.
     </p>
+    <img src="{{url_for('static', filename='iWasBored.jpg')}}" alt="luffy" />
   </body>
 </html>
